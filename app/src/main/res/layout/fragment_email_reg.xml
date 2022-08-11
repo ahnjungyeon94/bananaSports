@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/btn_register_back"
+            android:layout_height="40dp"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/bmjua_ttf"
+            android:paddingLeft="10dp"
+            android:text="이메일로 회원가입하기"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:text="이메일"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/txt_email"
+            android:layout_width="200dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/border_box"
+            android:hint="이메일을 입력해 주세요."
+            android:paddingLeft="10dp"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:text="닉네임 (설정없을 경우 이메일로 대체됩니다)"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/txt_nickname"
+            android:layout_width="200dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/border_box"
+            android:hint="매치 메이커에서 사용하실 닉네임을 설정해주세요"
+            android:paddingLeft="10dp"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:text="비밀번호"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/txt_pwd"
+            android:layout_width="200dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/border_box"
+            android:hint="비밀번호를 입력해 주세요."
+            android:paddingLeft="10dp"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/txt_pwd_confirm"
+            android:layout_width="200dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_box"
+            android:hint="비밀번호 확인을위해 한번 더 입력해 주세요."
+            android:paddingLeft="10dp"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:text="전화번호"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/txt_phone_number"
+            android:layout_width="200dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_box"
+            android:hint="전화번호를 입력해주세요(- 빼고)"
+            android:paddingLeft="10dp"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_category_btn"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_category_open"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/solid_button_back"
+                android:text="관심있는 운동 선택하기 (최대 5개까지 선택 가능) "
+                android:textAllCaps="false" />
+        </RelativeLayout>
+
+        <!-- <androidx.recyclerview.widget.RecyclerView-->
+        <!-- android:layout_width="match_parent"-->
+        <!-- android:layout_height="wrap_content"-->
+        <!-- android:id="@+id/rv_profile"-->
+
+        <!-- android:orientation="vertical"-->
+        <!-- tools:listitem="@layout/reg_category_item">-->
+
+        <!-- </androidx.recyclerview.widget.RecyclerView>-->
+
+        <RelativeLayout
+            android:id="@+id/layout_register_btn"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/solid_button_back"
+                android:text="매치 메이커 합류 하기"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_category_open2"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/solid_button_back"
+                android:text="카테고리 보러가자"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

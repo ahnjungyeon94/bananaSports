@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="fragment.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_LoginFragment_to_EmailRegFragment"
+            app:destination="@id/EmailRegFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EmailRegFragment"
+        android:name="fragment.EmailRegFragment"
+        android:label="fragment_email_reg"
+        tools:layout="@layout/fragment_email_reg" >
+        \
+        <action
+            android:id="@+id/action_EmailRegFragment_to_CategoryFragment3"
+            app:destination="@id/CategoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CategoryFragment"
+        android:name="fragment.CategoryFragment"
+        android:label="fragment_reg_category"
+        tools:layout="@layout/fragment_category" />
+
+</navigation>
